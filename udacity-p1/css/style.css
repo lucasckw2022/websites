@@ -71,12 +71,6 @@ nav .mobile .menu{
     transform: translate(130px,0);
 }
 
-
-
-nav .mobile p:first-child{
-	border-bottom: 1px solid black;
-}
-
 nav .mobile p{
 	padding: 0 10px;
 	cursor: pointer;
