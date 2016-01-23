@@ -1,0 +1,179 @@
+body{
+	background-color: #f0efef;
+	font-family: 'Open Sans', sans-serif;
+}
+nav{
+	display:block;
+	position:fixed;
+	height:50px;
+	width: 100%;
+	background-color: #033048;
+	z-index:9999;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+nav .title p{
+	margin-left:50px;
+	padding-top:13px;
+	font-size:24px;
+	font-weight:700;
+	color:white;
+	float:left;
+}
+
+nav ul{
+	list-style:none;
+	padding-top:17px;
+	margin-right: 50px;
+	
+}
+
+nav li a{
+	float:right;
+	color:#f9e42e;
+	padding-right:20px;
+}
+
+nav li a:hover{
+	color: #ffffff;
+}
+
+.content-container{
+	padding-top:100px;
+	width: 80%;
+	margin:0 auto;
+	display:flex;
+	flex-direction:row;
+}
+
+.content-container h2{
+	font-size:40px;
+	font-weight:600;
+	color:#033048;
+}
+.content-container img{
+	padding:15px 0 ;
+}
+.content-container p{
+	font-size:24px;
+	font-weight: light;
+	color:#606161;
+
+}
+.content-container article{
+	flex-direction:column;
+	width:700px;
+}
+
+.firstLetter{
+	float:left;
+	font-weight: 700;
+	font-size:50px;
+}
+
+.readMore a{
+	display:block;
+	padding: 25px 0;
+	margin:20px 0;
+	font-size:24px ;
+	font-weight:700;
+	text-align: right;
+	border-bottom:2px solid #033048;
+	color:#033048;
+}
+
+.rightMenu{
+	flex-direction:column; margin-left: 40px;
+}
+
+.category .subTitle{
+	font-weight:900;
+	font-size:32px ;
+	color:#033048;
+	padding-bottom: 15px;
+}
+
+.category .item a{
+	display:block;
+	padding-bottom:5px;
+	color:#033048;
+	font-size:24px ;
+	font-weight: 100;
+}
+
+.about .subTitle{
+	margin-top:40px;
+	font-weight:900;
+	font-size:32px ;
+	color:#033048;
+	padding-bottom: 15px;
+}
+
+.about .learnMore{
+	font-weight:900;
+	font-size: 24px;
+	display:block;
+	color:#033048;
+}
+
+.about img {
+	margin-top:40px;
+}
+
+.signUp {
+	width:100%;
+	display:block;
+	height:65px;
+	text-align: center;
+	background-color:#f9e42e;
+}
+.signUp a{
+	margin:0 auto;
+	display:inline-block;
+	width:150px;
+	background-color: #033048;
+	color:#ffffff;
+	border-radius: 3px;
+	padding:10px 15px;
+	margin-top:15px;
+	font-weight: 900;
+}
+.signUp a:hover{
+	background-color:#606161;
+	text-decoration: none;
+}
+
+footer{
+	height:300px;
+	background-color: #121212;
+	text-align: center;
+}
+
+footer .logo{
+	font-weight: 900;
+	font-size: 40px;
+	color: #f9e42e;
+	padding:40px 0px;
+}
+/*footer .social{
+	display:inline-block; width:140px;
+}
+footer .social img{
+	float:left; padding:0px 15px;
+}*/
+
+footer .social img{
+	display:inline-block; padding:30px;
+}
+
+footer .copyright{
+	margin:40px 0px;
+	color:#ffffff;
+}

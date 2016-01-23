@@ -1,0 +1,39 @@
+html{
+	background-color: gray;
+	height:100%;
+}
+
+body{
+	width:60%;
+	margin: 0 auto;
+	background-color: white;
+	min-height:90%;
+}
+
+body, #container, #box_1, #box_2{
+	border-radius: 10px;
+	padding:20px;
+	border:2px solid green;
+}
+
+#container{
+	display:flex;
+}
+
+#box_1{
+	width:70%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+#box_2{
+	width:30%;
+	text-align: center;
+}
+
+p{
+	background-color: rgba(0,255,0,0.2);
+	padding:10px;
+	border-radius: 10px;
+}

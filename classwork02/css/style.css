@@ -1,0 +1,14 @@
+html{
+    height: 100%;
+    background: lightgray;
+}
+
+body{
+    min-height:90%;
+    background: white;
+    width: 80%;
+    margin: 10px auto;
+}
+
+h1{
+    padding:20px;}
