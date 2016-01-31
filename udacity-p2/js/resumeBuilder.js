@@ -1,12 +1,12 @@
 var bio = {
 	"name": "Lucas Cheung",
 	"role": "Web Developer",
-	"contacts":[{
+	"contacts":{
 		"mobile": "+852 5171 3601",
 		"email":"lucas20229763@hotmail.com",
 		"github":"yeeie201",
-		"location": "Hong Kong"
-	}],
+		"location": "Union Plaza, Fanling, Hong Kong"
+	},
 	"welcomeMessage":"Welcome to my profile page",
 	"skills":["css","Javascript","JQuery","Positive","Simley Face"],
 	"biopic": "images/profile.jpg",
@@ -16,16 +16,14 @@ var name = HTMLheaderName.replace("%data%", bio.name);
 var role = HTMLheaderRole.replace("%data%", bio.role);
 $('#header').prepend(role);
 $('#header').prepend(name);
-for (contactInfo in bio.contacts){
-var headerContact = HTMLcontactGeneric.replace("%contact%","Contact").replace("%data%",bio.contacts[contactInfo].mobile);
+var headerContact = HTMLcontactGeneric.replace("%contact%","Contact").replace("%data%",bio.contacts.mobile);
 $('#header ul').append(headerContact);
-var headerMobile = HTMLmobile.replace("%data%",bio.contacts[contactInfo].mobile);
+var headerMobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
 $('#header ul').append(headerMobile);
-var headerEmail = HTMLemail.replace("%data%",bio.contacts[contactInfo].email);
+var headerEmail = HTMLemail.replace("%data%",bio.contacts.email);
 $('#header ul').append(headerEmail);
-var headerGithub = HTMLgithub.replace("%data%",bio.contacts[contactInfo].github);
+var headerGithub = HTMLgithub.replace("%data%",bio.contacts.github);
 $('#header ul').append(headerGithub);
-};
 var headerMsg = HTMLwelcomeMsg.replace("%data%",bio.welcomeMessage);
 $('#header').append(headerMsg);
 
@@ -38,14 +36,14 @@ var education = {
 	"schools":[
 	{
 		"name":"General Assembly",
-		"location":"Hong Kong",
+		"location":"Central, Hong Kong",
 		"dates": "Aug 2015 - Oct 2015",
 		"majors":"Intensive Front-end Web Development Course",
 		"url": "http://generalassemb.ly/hong-kong"
 	},
 	{
 		"name": "University of Surrey",
-		"location": "United Kingdom",
+		"location": "University of Surrey, United Kingdom",
 		"dates": "2009 - 2012",
 		"majors": "BSc (Hons) International Hospitality Management",
 		"url": "http://www.surrey.ac.uk/"
@@ -66,7 +64,7 @@ var work = {
 	{
 		"employer": "Mirum HK (DesignerCity (HK) Ltd)",
 		"title": "Project Executive",
-      	"location": "Hong Kong",
+      	"location": "128 Wellington Street, Central, Hong Kong",
      	"dates": "Aug 2014 - Current",
       	"description": "Execute various project deliverables and ensue achievement of objectives and assist staff to manage complex projects.",
 		"url": "https://www.mirumagency.com/hong-kong"
@@ -74,7 +72,7 @@ var work = {
 	{
 		"employer": "Optimum Media Direction (OMD)",
 		"title": "Digital Executive",
-      	"location": "Hong Kong",
+      	"location": "Cyberport, Hong Kong",
      	"dates": "Mar 2014 – Jul 2014",
       	"description": "Prepare different report and use different tools to conduct market research.",
       	"url": "http://www.omd.com/asia-pacific/global-media-agency"
