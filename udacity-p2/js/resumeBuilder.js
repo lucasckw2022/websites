@@ -139,23 +139,23 @@ var projects = {
         'title': 'Responsive Profile',
         'dates': 'Jan 2016',
         'description': 'A responsive website',
-        'images': 'images/udacity-p1.jpg',
+        'images': ['images/udacity-p1.jpg'],
         'display': '',
-        'url': ['http://yeeie201.github.io/websites/udacity-p1/']
+        'url': 'http://yeeie201.github.io/websites/udacity-p1/'
     }, {
         'title': 'CLP e-product page',
         'dates': 'Oct 2015',
         'description': 'Developing a signle page template follow layout. (Responsive)',
-        'images': 'http://yeeie201.github.io/websites/udacity-p1/image/project_icon/project1.jpg',
+        'images': ['http://yeeie201.github.io/websites/udacity-p1/image/project_icon/project1.jpg'],
         'display': '',
-        'url': ['http://www.ifc.com.hk/ic/en/ss2015/#/home']
+        'url': 'http://www.ifc.com.hk/ic/en/ss2015/#/home'
     }, {
         'title': 'SS2015 IC Magazine',
         'dates': 'Mar 2015',
         'description': 'Update and create pages following layout and html template',
-        'images': 'http://yeeie201.github.io/websites/udacity-p1/image/project_icon/project2.jpg',
+        'images': ['http://yeeie201.github.io/websites/udacity-p1/image/project_icon/project2.jpg'],
         'display': '',
-        'url': ['http://yeeie201.github.io/websites/project08/']
+        'url': 'http://yeeie201.github.io/websites/project08/'
     }]
 };
 projects.display = function() {
@@ -176,15 +176,6 @@ projects.display = function() {
     $('.project-entry img').css('max-width', '300px');
 };
 projects.display();
-
-//The name game (Change name to international version)
-/*$('#header hr').after(internationalizeButton);
-function inName(){
-		var myName = $('#name');
-		var firstName = myName.text().split(' ')[0].slice(0,1).toUpperCase() + myName.text().split(' ')[0].slice(1).toLowerCase();
-		var newName = firstName +' '+ myName.text().split(' ')[1].toUpperCase();
-		myName.text(newName);
-}*/
 
 //css fine tune
 $('#header').css('background', 'rgba(97,10,10,0.9)');
