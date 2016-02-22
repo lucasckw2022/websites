@@ -143,19 +143,19 @@ var projects = {
         'display': '',
         'url': 'http://yeeie201.github.io/websites/udacity-p1/'
     }, {
-        'title': 'CLP e-product page',
+        'title': 'CLP project',
         'dates': 'Oct 2015',
         'description': 'Developing a signle page template follow layout. (Responsive)',
         'images': ['http://yeeie201.github.io/websites/udacity-p1/image/project_icon/project1.jpg'],
         'display': '',
-        'url': 'http://www.ifc.com.hk/ic/en/ss2015/#/home'
+        'url': 'http://yeeie201.github.io/websites/project08/'
     }, {
         'title': 'SS2015 IC Magazine',
         'dates': 'Mar 2015',
         'description': 'Update and create pages following layout and html template',
         'images': ['http://yeeie201.github.io/websites/udacity-p1/image/project_icon/project2.jpg'],
         'display': '',
-        'url': 'http://yeeie201.github.io/websites/project08/'
+        'url': 'http://www.ifc.com.hk/ic/en/ss2015/#/home'
     }]
 };
 projects.display = function() {
