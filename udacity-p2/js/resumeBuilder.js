@@ -1,7 +1,7 @@
 //header
 var bio = {
     'name': 'Lucas Cheung',
-    'role': 'Web Developer',
+    'role': '',
     'contacts': {
         'mobile': '+852 5171 3601',
         'email': 'lucas20229763@hotmail.com',
@@ -9,7 +9,7 @@ var bio = {
         'location': 'Union Plaza, Fanling, Hong Kong'
     },
     'welcomeMessage': 'Welcome to my profile page',
-    'skills': ['css', 'Javascript', 'JQuery', 'Positive', 'Simley Face'],
+    'skills': ['HTML', 'css', 'Javascript', 'JQuery', 'Positive', 'Simley Face', 'Photoshop', 'Adobe Illustrator', 'Microsoft Office (Word, Excel, Powerpoint, Outlook)'],
     'biopic': 'images/profile.jpg',
 };
 bio.display = function() {
@@ -119,7 +119,7 @@ var work = {
         for (var workInfo in work.jobs) {
             if (work.jobs.hasOwnProperty(workInfo)) {
                 $('#workExperience').append(HTMLworkStart);
-                var works = HTMLworkEmployer.replace('%data%', work.jobs[workInfo].employer).replace('#', work.jobs[workInfo].url) + HTMLworkTitle.replace('%data%', work.jobs[workInfo].title);
+                var works = HTMLworkEmployer.replace('%data%', work.jobs[workInfo].employer).replace('#', work.jobs[workInfo].url) /*+ HTMLworkTitle.replace('%data%', work.jobs[workInfo].title)*/;
                 $('.work-entry:last').append(works);
                 $('.work-entry a').attr('target', '_blank');
                 var date = HTMLworkDates.replace('%data%', work.jobs[workInfo].dates);
